@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#flower01 {
+  width: 250px;
+  position: relative;
+  animation: dropBounce 1s ease-in-out forwards;
+}
+
+@keyframes dropBounce {
+  0% {
+    transform: translateY(-200px);
+  }
+  70% {
+    transform: translateY(80px);
+  }
+  85% {
+    transform: translateY(60px);
+  }
+  95% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+#flower02 {
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 200px;
+  height: 200px;
+  animation: slideLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    top: 80px;
+    right: 30px;
+  }
+  100% {
+    top: 80px;
+    right: 60px;
+  }
+}
+
+#flower03 {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  height: 200px;
+  animation: slideRight 1s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    top: 100px;
+    left: 30px;
+  }
+  100% {
+    top: 120px;
+    left: 50px;
+  }
+}
+
+#flower04 {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  height: 200px;
+  animation: slideBottom 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideBottom {
+  0% {
+    top: 100px;
+    left: 350px;
+  }
+  100% {
+    top: 120px;
+    left: 350px;
+  }
+}
+
+#flower05 {
+  width: 200px;
+  position: relative;
+  top: 100px;
+  left: 350px;
+  height: 200px;
+  animation: slideBottom 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes dropBounce {
+  0% {
+    transform: translateY(-200px);
+  }
+  70% {
+    transform: translateY(80px);
+  }
+  80% {
+    transform: translateY(60px);
+  }
+  90% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
